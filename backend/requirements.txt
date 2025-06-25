@@ -1,0 +1,5 @@
+Flask
+pytesseract
+opencv-python
+deepface
+Pillow

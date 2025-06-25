@@ -1,0 +1,89 @@
+/* Reset and font */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #2a5298);
+  background-size: 400% 400%;
+  animation: shimmerBG 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes shimmerBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background-color: #ffffffee;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  color: #1976d2;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.upload-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #125ea9;
+  box-shadow: 0 0 10px rgba(25, 118, 210, 0.8);
+  transform: scale(1.02);
+}
+
+#result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f1f8ff;
+  border: 1px solid #c3e1ff;
+  border-radius: 10px;
+  display: none;
+}

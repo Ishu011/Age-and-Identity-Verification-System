@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age and Identity Verification</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 Age and Identity Verification</h1>
+    </header>
+
+    <form id="verificationForm" enctype="multipart/form-data" method="POST" action="/">
+      <div class="upload-group">
+        <label for="id_card">🪪 ID Card Image:</label>
+        <input type="file" id="id_card" name="id_card" accept="image/*" required>
+      </div>
+
+      <div class="upload-group">
+        <label for="selfie">🤳 Selfie Image:</label>
+        <input type="file" id="selfie" name="selfie" accept="image/*" required>
+      </div>
+
+      <div class="upload-group">
+        <label for="dob">🎂 Date of Birth (DD/MM/YYYY):</label>
+        <input type="text" id="dob" name="dob" placeholder="e.g., 12/08/2004" required>
+      </div>
+
+      <button type="submit">✅ Verify</button>
+    </form>
+
+    {% if result %}
+    <div id="result-box">
+      <h2>📋 Result</h2>
+      <p>{{ result }}</p>
+    </div>
+    {% endif %}
+
+    <footer>
+      <p>&copy; 2025 Identity AI | Built for Hackathons</p>
+    </footer>
+  </div>
+
+  <script>
+    const form = document.getElementById("verificationForm");
+    form.addEventListener("submit", () => {
+      document.getElementById("result-box").style.display = "block";
+    });
+  </script>
+</body>
+</html>
