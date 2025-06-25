@@ -30,18 +30,19 @@ This project is a complete age and identity verification solution developed usin
 - Provides immediate feedback including face match score, age detection, and verification result.
 
 
-## Folder Structure
+##  Folder Structure
 
+```
 Age and Identity Verification System/
 ├── backend/
-│ ├── app.py # Flask application backend
-│ ├── requirements.txt # Python dependencies
-│ ├── templates/
-│ │ └── index.html # Frontend HTML page
-│ ├── static/
-│ │ ├── style.css # CSS styling
-│ │ └── uploads/ # Folder to save uploaded ID and selfie images
-├── README.md # Project documentation
+│   ├── app.py               # Flask application backend
+│   ├── requirements.txt     # Python dependencies
+│   ├── templates/
+│   │   └── index.html       # Frontend HTML page
+│   ├── static/
+│   │   ├── style.css        # CSS styling
+│   │   └── uploads/         # Folder to save uploaded ID and selfie images
+├── README.md                # Project documentation
 
 ## Setup Instructions
 
