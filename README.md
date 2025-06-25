@@ -14,6 +14,7 @@ This project is a complete age and identity verification solution developed usin
 - Calculates the user's current age.
 - Verifies whether the user is 18 years or older.
 
+
 ### 3. Blurry Image Detection
 - Detects poor quality or blurry selfies using OpenCV’s Laplacian Variance method.
 - Notifies the user if the image quality is insufficient for accurate detection.
@@ -43,6 +44,8 @@ Age and Identity Verification System/
 │   │   ├── style.css        # CSS styling
 │   │   └── uploads/         # Folder to save uploaded ID and selfie images
 ├── README.md                # Project documentation
+
+```
 
 ## Setup Instructions
 
