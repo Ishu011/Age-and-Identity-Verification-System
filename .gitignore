@@ -3,6 +3,15 @@ __pycache__/
 *.pyc
 .DS_Store
 
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+*.exe
+venv/
+
+
 # Ignore virtual environment
 venv/
 ENV/
@@ -23,11 +32,9 @@ build/
 dist/
 *.spec
 
-# Ignore user uploads (for privacy)
 backend/static/uploads/
 static/uploads/
 
-# Ignore logs and temporary files
 *.log
 *.tmp
 *.swp
@@ -40,10 +47,6 @@ ehthumbs.db
 Icon?
 desktop.ini
 
-# Ignore compiled C extensions
-*.so
-*.pyd
-*.dll
 
 # Ignore test artifacts
 coverage/
@@ -59,9 +62,5 @@ htmlcov/
 .env
 .env.*
 
-# Ignore screenshots, sample images
-*.png
-*.jpg
-*.jpeg
 
 
