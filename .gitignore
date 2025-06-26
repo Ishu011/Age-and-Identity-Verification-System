@@ -3,3 +3,65 @@ __pycache__/
 *.pyc
 .DS_Store
 
+# Ignore virtual environment
+venv/
+ENV/
+env/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore PyInstaller build outputs
+build/
+dist/
+*.spec
+
+# Ignore user uploads (for privacy)
+backend/static/uploads/
+static/uploads/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Ignore OS-generated files
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Ignore compiled C extensions
+*.so
+*.pyd
+*.dll
+
+# Ignore test artifacts
+coverage/
+htmlcov/
+*.cover
+.cache
+.tox
+.nox
+
+
+.ipynb_checkpoints/
+
+.env
+.env.*
+
+# Ignore screenshots, sample images
+*.png
+*.jpg
+*.jpeg
+
+
