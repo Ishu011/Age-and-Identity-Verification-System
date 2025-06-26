@@ -76,7 +76,8 @@ In the terminal, run the Flask application : python app.py
 4. Face Detection and Cropping: System detects and crops the face region from the ID card.
 5. Face Matching: Compares the cropped ID face with the live selfie using DeepFace.
 6. Blurry Detection: Detects if the selfie is too blurry to be used.
-7. Verification Result: Displays: ![Screenshot 2025-06-26 032243](https://github.com/user-attachments/assets/ace3dbef-605d-4d3d-8bc1-22f8cc6b894a)
+7. Verification Result: Displays:
+ ![Screenshot 2025-06-26 032243](https://github.com/user-attachments/assets/ace3dbef-605d-4d3d-8bc1-22f8cc6b894a)
 
 8. Whether the user is verified
 9. Age detected
