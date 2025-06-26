@@ -1,5 +1,10 @@
-Flask>=2.0  
-pytesseract>=0.3  
-opencv-python-headless>=4.7  
-deepface>=0.0.75  
-Pillow>=9.0
+Flask
+opencv-python
+deepface
+tensorflow
+pillow
+numpy
+pandas
+matplotlib
+gunicorn
+tesseract
