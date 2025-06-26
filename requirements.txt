@@ -1,7 +1,7 @@
 Flask
 opencv-python
 deepface
-tensorflow
+tensorflow-cpu
 pillow
 numpy
 pandas
