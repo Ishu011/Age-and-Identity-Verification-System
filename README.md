@@ -2,6 +2,8 @@
 
 This project is a complete age and identity verification solution developed using Python, Flask, DeepFace, OpenCV, and Tesseract OCR. It allows users to upload a government-issued ID (such as Aadhaar) and capture a live selfie using their webcam. The system performs Optical Character Recognition (OCR) to extract the date of birth (DOB), calculates the user’s age, detects and compares facial features between the ID and the selfie, and then verifies if the user is 18 years or older.
 
+### Live Link : http://127.0.0.1:5000/
+
 ### Flowchart 
 ![Flowchart](https://github.com/user-attachments/assets/49af4034-3981-4fce-8bdc-f2c1edcdbaa2)
 
