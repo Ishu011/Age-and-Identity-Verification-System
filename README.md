@@ -30,6 +30,7 @@ This project is a complete age and identity verification solution developed usin
 - Clean and professional UI built with HTML, CSS, and JavaScript.
 - Provides immediate feedback including face match score, age detection, and verification result.
 
+![Flowchart](https://github.com/user-attachments/assets/fcca7b7f-e127-4360-a0d8-e671c8dbaa21)
 
 ##  Folder Structure
 
