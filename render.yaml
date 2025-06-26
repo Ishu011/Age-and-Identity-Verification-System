@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: Age and Identity Verification System
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn backend.app:app
+    plan: free
