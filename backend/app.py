@@ -2,17 +2,20 @@
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow warnings
 
-# DeepFace compatibility workaround
+# DeepFace compatibility workaround for TensorFlow 2.20.0
 try:
-    from tensorflow.keras.layers import LocallyConnected2D
+    from tensorflow.keras.layers import LocallyConnected2D  # Newer import path
 except ImportError:
-    # Fallback for different TF versions
-    from tensorflow.keras.layers.experimental import LocallyConnected2D
+    try:
+        from keras.layers import LocallyConnected2D  # Fallback import
+    except ImportError:
+        from keras.layers.experimental import LocallyConnected2D  # Legacy import
 
 import tensorflow.keras.layers as layers
 import tensorflow.keras as keras
 setattr(layers, 'LocallyConnected2D', LocallyConnected2D)
 setattr(keras.layers, 'LocallyConnected2D', LocallyConnected2D)
+
 
 
 
