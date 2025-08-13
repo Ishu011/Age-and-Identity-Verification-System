@@ -4,18 +4,19 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow warnings
 
 # DeepFace compatibility workaround for TensorFlow 2.20.0
 try:
-    from tensorflow.keras.layers import LocallyConnected2D  # Newer import path
+    from tensorflow.keras.layers import LocallyConnected2D
 except ImportError:
-    try:
-        from keras.layers import LocallyConnected2D  # Fallback import
-    except ImportError:
-        from keras.layers.experimental import LocallyConnected2D  # Legacy import
+    # For TensorFlow 2.20.0, the layer is in _tf_keras
+    from tensorflow.python.keras.layers import LocallyConnected2D
 
 import tensorflow.keras.layers as layers
 import tensorflow.keras as keras
 setattr(layers, 'LocallyConnected2D', LocallyConnected2D)
 setattr(keras.layers, 'LocallyConnected2D', LocallyConnected2D)
 
+# Rest of your imports
+from flask import Flask, render_template, request
+# ... keep all your existing code ...
 
 
 
