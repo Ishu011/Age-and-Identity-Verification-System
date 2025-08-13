@@ -14,9 +14,7 @@ import tensorflow.keras as keras
 setattr(layers, 'LocallyConnected2D', LocallyConnected2D)
 setattr(keras.layers, 'LocallyConnected2D', LocallyConnected2D)
 
-# Rest of your imports
-from flask import Flask, render_template, request
-# ... keep all your existing code ...
+
 
 
 
