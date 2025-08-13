@@ -1,5 +1,17 @@
-from flask import Flask, render_template, request
+
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  
+from tensorflow.keras.layers.experimental import LocallyConnected2D
+from tensorflow.python.util import module_wrapper
+import tensorflow.keras.layers
+
+setattr(tensorflow.keras.layers, 'LocallyConnected2D', LocallyConnected2D)
+
+
+
+
+from flask import Flask, render_template, request
+
 from PIL import Image
 import pytesseract
 import re
@@ -9,7 +21,7 @@ from deepface import DeepFace
 import base64
 from io import BytesIO
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 
 app = Flask(__name__)
 UPLOAD_FOLDER = os.path.join("static", "uploads")
