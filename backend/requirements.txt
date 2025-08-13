@@ -2,6 +2,6 @@ Flask>=2.0,<3.0
 pytesseract>=0.3
 opencv-python-headless>=4.7.0
 Pillow>=10.0.0
-tensorflow-cpu==2.20.0rc0 
-deepface>=0.0.75
+tensorflow==2.20.0rc0  # Remove "-cpu" to satisfy deepface
+deepface==0.0.79  # Newer version with better compatibility
 gunicorn>=20.1.0
