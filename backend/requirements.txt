@@ -3,4 +3,4 @@ pytesseract>=0.3
 opencv-python-headless>=4.7  
 deepface>=0.0.75  
 Pillow>=9.0  
-tensorflow==2.12
+tensorflow==2.20
